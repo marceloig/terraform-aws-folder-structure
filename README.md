@@ -30,8 +30,8 @@ Este repositório define um padrão de organização de diretórios e arquivos p
 │                   ├── provider.tf
 │                   └── backend.tf
 └── modules/
-    ├── custom/
-    └── third-party/
+    └── frontend/
+
 ```
 
 ## Vantagens da Estrutura
@@ -106,7 +106,7 @@ Recursos compartilhados entre múltiplas aplicações no mesmo ambiente.
 - **DNS**: Route53 Hosted Zones
 
 ### Modules (`modules/`)
-Armazena módulos Terraform desenvolvidos especificamente para o projeto ou módulos externos do Terraform Registry ou outros repositórios
+Armazena módulos Terraform desenvolvidos especificamente para o projeto
 
 **Recomendação**: Use módulos de terceiros apenas quando necessário e sempre com versionamento fixo.
 
