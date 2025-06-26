@@ -71,7 +71,9 @@ Representa a região AWS onde os recursos serão implantados.
 - `us-west-2/` (Oregon)
 - `eu-west-1/` (Irlanda)
 
-**Recursos Globais**: Para serviços AWS globais que podem ter conflitos de nomenclatura entre regiões, utilize o diretório `global/`:
+**Recursos Globais**: Para serviços AWS globais que podem ter conflitos de nomenclatura entre regiões caso seja um projeto multi região, utilize o diretório `global/`
+
+**Exemplos de Serviços AWS Global**:
 - IAM
 - Route53
 - CloudFront
