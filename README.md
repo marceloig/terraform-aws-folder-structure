@@ -158,4 +158,4 @@ xpto/
 
 ## Referências
 
-Esta estrutura foi adaptada das melhores práticas recomendadas pelo projeto [Terragrunt](https://github.com/gruntwork-io/terragrunt-infrastructure-live-example) e validada em ambientes de produção.
+Esta estrutura foi adaptada das melhores práticas recomendadas pelo projeto [Terragrunt](https://github.com/gruntwork-io/terragrunt-infrastructure-live-example).
