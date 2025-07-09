@@ -58,12 +58,12 @@ Este repositório define um padrão de organização de diretórios e arquivos p
 
 ## Detalhamento dos Diretórios
 
-### Account (`account/`)
+### Account (`{account}/`)
 Representa a conta AWS do projeto. O nome do diretório deve corresponder ao:
 - Nome da conta AWS, ou
 - Alias da conta AWS
 
-### Region (`region/`)
+### Region (`{region}/`)
 Representa a região AWS onde os recursos serão implantados.
 
 **Exemplos**:
@@ -79,7 +79,7 @@ Representa a região AWS onde os recursos serão implantados.
 - CloudFront
 - WAF Global
 
-### Environment (`environment/`)
+### Environment (`{environment}/`)
 Representa o ambiente de deployment do projeto.
 
 **Exemplos**:
@@ -88,7 +88,7 @@ Representa o ambiente de deployment do projeto.
 - `development/`
 - `sandbox/`
 
-### Workloads (`workloads/`)
+### Workloads (`workloads/{workload}`)
 Contém as aplicações ou cargas de trabalho específicas. Cada subdiretório representa uma aplicação independente com sua própria infraestrutura.
 
 **Exemplo de workloads**:
@@ -98,7 +98,7 @@ Contém as aplicações ou cargas de trabalho específicas. Cada subdiretório r
 
 **Comunicação entre workloads**: Use data sources do Terraform para referenciar recursos de outros workloads.
 
-### Shared Resources (`shared_resources/`)
+### Shared Resources (`shared_resources/{resource}`)
 Recursos compartilhados entre múltiplas aplicações no mesmo ambiente.
 
 **Exemplos de recursos compartilhados**:
@@ -107,7 +107,7 @@ Recursos compartilhados entre múltiplas aplicações no mesmo ambiente.
 - **Monitoring**: CloudWatch, CloudTrail
 - **DNS**: Route53 Hosted Zones
 
-### Modules (`modules/`)
+### Modules (`modules/{module}`)
 Armazena módulos Terraform desenvolvidos especificamente para o projeto
 
 **Recomendação**: Use módulos de terceiros apenas quando necessário e sempre com versionamento fixo.
